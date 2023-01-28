@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(-20deg,rgb(94, 9, 42) 0%, rgba(168,28,165,0.8211659663865546) 19%, rgba(231,176,230,1) 46%, rgba(0,212,255,0.908000700280112) 73%, rgba(128,234,255,1) 93%);
+   
+}
+
+header{
+    width: 100%;
+    height: 50px;
+}
+.nav{
+    margin-top: 10px;
+    text-align:center;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+
+    display: flex; /*a los elementos dentro del main*/
+    justify-content: center;
+}
+
+section{
+    margin: 20px;
+    width: 40%;
+    height: 90%;
+    background-color: aliceblue;  
+    border-radius: 50px;  
+    box-shadow: 10px 10px 25px 15px #000000;
+}
+
+.cuerpo1{
+    width: 60%;
+    background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url("img/fondo.jpg");
+}
+
+.text-area{
+    width: 80%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    resize: none; /*SACA EL NODO MODIFICARDOR DE TAMAÑO DEL TEXT AREA*/
+    font-size: 30px;
+}
+
+.botones{
+    text-align: center;
+    margin: 1em;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    width: 30%;   
+    margin: 5px;    
+    padding: 20px;
+    border: 3px solid rgba(100, 100, 100, 0.1); 
+    border-radius: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.btn-encriptar{
+    background:#410937;    
+}
+.btn-desencriptar{
+    background: #dd60c6;
+}
+
+.explicacion{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px black;
+}
+
+.cuerpo2{
+    width: 20%;
+    text-align: center;   
+}
+
+.persona img{
+    width: 50%;  
+    margin-top: 7em;
+    padding: 10px;  
+}
+
+.noEncontrado{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+.ingrese{
+    font-size: 18px;
+
+}
+
+footer{
+    width: 100%;
+    height: 50px;     
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+   
+}
+
