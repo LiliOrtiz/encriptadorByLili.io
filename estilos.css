@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
 body{
     background: linear-gradient(-20deg,rgb(94, 9, 42) 0%, rgba(168,28,165,0.8211659663865546) 19%, rgba(231,176,230,1) 46%, rgba(0,212,255,0.908000700280112) 73%, rgba(128,234,255,1) 93%);
    
@@ -10,6 +15,18 @@ header{
 .nav{
     margin-top: 10px;
     text-align:center;
+}
+
+.git, .linke{
+    cursor: pointer;
+}
+
+.git:hover{
+    transform: scale(1.2);
+}
+
+.linke:hover{
+    transform: scale(1.2);
 }
 
 main{
@@ -30,7 +47,7 @@ section{
 }
 
 .cuerpo1{
-    width: 60%;
+    width: 55%;
     background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url("img/fondo.jpg");
 }
 
@@ -38,10 +55,13 @@ section{
     width: 80%;
     height: 50%;
     display: block;
-    margin: auto;
+    margin: auto;    
     margin-top: 50px;
+    padding: 10px 20px;
     resize: none; /*SACA EL NODO MODIFICARDOR DE TAMAÑO DEL TEXT AREA*/
     font-size: 30px;
+    font-family: 'Cormorant', serif;
+    border-radius: 9px;
 }
 
 .botones{
@@ -55,18 +75,30 @@ section{
     padding: 20px;
     border: 3px solid rgba(100, 100, 100, 0.1); 
     border-radius: 8px;
+    font-family: 'Didact Gothic', sans-serif;
     cursor: pointer;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
-
+    
 }
 
 .btn-encriptar{
     background:#410937;    
 }
+
+.btn-encriptar:hover{
+    background: #290613; 
+    transform: scale(1.1);
+}
+
 .btn-desencriptar{
     background: #dd60c6;
+}
+
+.btn-desencriptar:hover{
+    background: #ec3ecc; 
+    transform: scale(1.1);
 }
 
 .explicacion{
@@ -75,39 +107,92 @@ section{
     font-size: 25px;
     font-weight: bold;
     color: #FFFFFF;
+    font-family: 'Kalam', cursive;
     text-shadow: 2px 2px 2px black;
 }
 
 .cuerpo2{
-    width: 20%;
-    text-align: center;   
+    width: 25%;
+    text-align: center;  
+    background: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url("img/fondo.jpg"); 
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.persona img{
-    width: 50%;  
-    margin-top: 7em;
-    padding: 10px;  
-}
 
 .noEncontrado{
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     font-weight: bold;
     margin: 5px;
-    padding: 5px;
+    margin-top: 6em;      
+    text-shadow: 1px 1px 7px white;
+    
 }
 
 .ingrese{
-    font-size: 18px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 90%;
 
 }
+
+.resultado{
+    margin-top: 2em;    
+}
+
+.resultado-mensaje{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Patua One', cursive;
+    color: #f58ce2;
+    text-shadow: 2px 2px 7px #2e0827;
+    padding: 10px;
+}
+
+
+.parrafoTexto{
+    resize: none;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(231,176,230,0.5942752100840336) 5%, rgba(238,252,255,0.5522584033613445) 50%, rgba(128,234,255,0.6222864145658263) 95%);
+}
+
+.btn-copiar{
+    width: 35%;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 2em;
+    border: none; 
+    border-radius: 8px; 
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Didact Gothic', sans-serif;
+    background: linear-gradient(130deg,rgba(199,235,242,0.8407738095238095) 0%, rgba(140,204,221,0.8855917366946778) 20%, rgba(90,178,203,0.87718837535014) 51%, rgba(67,154,179,0.8211659663865546) 96%);
+    box-shadow: 12px 5px 16px 2px #000000;
+}
+
+.btn-copiar:hover{
+    background: linear-gradient(130deg,rgba(139, 165, 170, 0.841) 0%, rgba(89, 127, 138, 0.886) 20%, rgba(42, 83, 94, 0.877) 51%, rgba(13, 93, 117, 0.821) 96%);
+    transform: scale(1.2);
+}    
 
 footer{
     width: 100%;
     height: 50px;     
     text-align: center;
     font-size: 18px;
-    color: #FFFFFF;
-   
+    color: #FFFFFF;   
+}
+
+.ocultar{
+    display: none;
 }
 
