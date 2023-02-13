@@ -12,14 +12,12 @@ botonEncripta.onclick = encriptar;
 botonDesencripta.onclick =desencriptar;
 botonCopiar.onclick = copiarPortapapeles;
 
-function encriptar(){    
-    ocultarCosas();    
+function encriptar(){
     var area = recuperaTexto();
     resultadoTexto.textContent = encriptaTexto(area);
 }
 
-function desencriptar(){
-    ocultarCosas();    
+function desencriptar(){      
     var area = recuperaTexto();
     resultadoTexto.textContent = desencriptarTexto(area);
 }
@@ -38,26 +36,38 @@ function encriptaTexto(mensaje){
     var texto = mensaje;
     var finalTexto = "";
 
-    for(var i=0; i<texto.length; i++){
-        if(texto[i] == "a"){
-            finalTexto = finalTexto + "ai";
-        }
-        else if(texto[i] == "e"){
-            finalTexto = finalTexto + "enter";
-        }
-        else if(texto[i] == "i"){
-            finalTexto = finalTexto + "imes";
-        }
-        else if(texto[i] == "o"){
-            finalTexto = finalTexto + "ober";
-        }
-        else if(texto[i] == "u"){
-            finalTexto = finalTexto + "ufat";
-        }
-        else{
-            finalTexto = finalTexto + texto[i];
+    for(var i=0; i < texto.length; i++){
+        if(((texto[i] < 'a') || (texto[i] > 'z')) && (texto[i] != ' ')){            
+            alert("No puede usar Mayúsculas o caracteres especiales");
+            ingreseTexto.value="";          
+           return;
+        }else{
+            ocultarCosas();
+            for(var i=0; i<texto.length; i++){
+                if(texto[i] == "a"){
+                    finalTexto = finalTexto + "ai";
+                }
+                else if(texto[i] == "e"){
+                    finalTexto = finalTexto + "enter";
+                }
+                else if(texto[i] == "i"){
+                    finalTexto = finalTexto + "imes";
+                }
+                else if(texto[i] == "o"){
+                    finalTexto = finalTexto + "ober";
+                }
+                else if(texto[i] == "u"){
+                    finalTexto = finalTexto + "ufat";
+                }
+                else{
+                    finalTexto = finalTexto + texto[i];
+                }
+            }   
         }
     }
+    
+
+   
 
     return finalTexto;
 }
@@ -93,7 +103,7 @@ function desencriptarTexto(mensaje){
             finalTexto = finalTexto + texto[i];
         }
     }
-
+    ingreseTexto.value ="";
     return finalTexto;
 }
 

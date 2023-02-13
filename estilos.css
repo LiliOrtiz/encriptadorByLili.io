@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
 
+
 body{
     background: linear-gradient(-20deg,rgb(94, 9, 42) 0%, rgba(168,28,165,0.8211659663865546) 19%, rgba(231,176,230,1) 46%, rgba(0,212,255,0.908000700280112) 73%, rgba(128,234,255,1) 93%);
    
@@ -156,7 +157,7 @@ section{
 .parrafoTexto{
     resize: none;
     width: 85%;
-    height: auto;
+    height: 50%;
     margin: auto;
     padding: 10px;
     border-radius: 20px;
